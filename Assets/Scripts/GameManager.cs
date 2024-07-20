@@ -2,33 +2,48 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject LeftFlipper;
-    [SerializeField] GameObject RightFlipper;
+    [SerializeField] GameObject[] LeftFlipper;
+    [SerializeField] GameObject[] RightFlipper;
     [SerializeField] float torqueForce;
 
-    Rigidbody2D leftRig;
-    Rigidbody2D rightRig;
+    Rigidbody2D[] leftRig;
+    Rigidbody2D[] rightRig;
 
 
     void Start()
     {
-        leftRig = LeftFlipper.GetComponent<Rigidbody2D>();
-        rightRig = RightFlipper.GetComponent<Rigidbody2D>();
+        LeftFlipper = GameObject.FindGameObjectsWithTag("Left");
+        RightFlipper = GameObject.FindGameObjectsWithTag("Right");
+
+        leftRig = new Rigidbody2D[LeftFlipper.Length];
+        rightRig = new Rigidbody2D[RightFlipper.Length];
+
+        for(int i = 0; i < LeftFlipper.Length; i++)
+        {
+            leftRig[i] = LeftFlipper[i].GetComponent<Rigidbody2D>();
+        }
+
+        for(int i = 0;i < RightFlipper.Length; i++)
+        {
+            rightRig[i] = RightFlipper[i].GetComponent<Rigidbody2D>();
+        }
+
+        
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             AddTorque(leftRig, torqueForce);
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             AddTorque(rightRig, -torqueForce);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             AddTorque(leftRig, torqueForce);
             AddTorque(rightRig, -torqueForce);
@@ -36,8 +51,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void AddTorque(Rigidbody2D rigit, float force)
+    void AddTorque(Rigidbody2D[] rigits, float force)
     {
-        rigit.AddTorque(force);
+        foreach(Rigidbody2D rigit in rigits)
+        {
+            rigit.AddTorque(force);
+        }
     }
 }
