@@ -16,7 +16,7 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(ballPos);
+       // Debug.Log(ballPos);
         ballPos = Ball.transform.position;
 
         if (ballPos != null && ballPos.y >= -5 && ballPos.y <= 4)

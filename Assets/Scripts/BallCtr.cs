@@ -3,7 +3,7 @@ using UnityEngine;
 public class BallCtr : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
-    [SerializeField] GameObject taihou;
+    [SerializeField] GameObject[] taihou;
 
     Rigidbody2D rigidbody2;
     Collider2D taihoucol;
@@ -11,7 +11,6 @@ public class BallCtr : MonoBehaviour
 
     private void Start()
     {
-        taihoucol = taihou.GetComponent<Collider2D>();
         rigidbody2 = GetComponent<Rigidbody2D>();
     }
 
