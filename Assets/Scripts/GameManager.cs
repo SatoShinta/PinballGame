@@ -4,16 +4,19 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject[] LeftFlipper;
     [SerializeField] GameObject[] RightFlipper;
+    [SerializeField] GameObject ball;
     [SerializeField] float torqueForce;
-
+    
     Rigidbody2D[] leftRig;
     Rigidbody2D[] rightRig;
+    Rigidbody2D ballRig;
 
 
     void Start()
     {
         LeftFlipper = GameObject.FindGameObjectsWithTag("Left");
         RightFlipper = GameObject.FindGameObjectsWithTag("Right");
+        ballRig = ball.GetComponent<Rigidbody2D>();
 
         leftRig = new Rigidbody2D[LeftFlipper.Length];
         rightRig = new Rigidbody2D[RightFlipper.Length];
@@ -47,9 +50,10 @@ public class GameManager : MonoBehaviour
         {
             AddTorque(leftRig, torqueForce);
             AddTorque(rightRig, -torqueForce);
-
         }
     }
+
+   
 
     void AddTorque(Rigidbody2D[] rigits, float force)
     {
@@ -58,4 +62,5 @@ public class GameManager : MonoBehaviour
             rigit.AddTorque(force);
         }
     }
+   
 }
