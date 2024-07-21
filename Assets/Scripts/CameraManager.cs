@@ -19,7 +19,7 @@ public class CameraManager : MonoBehaviour
         Debug.Log(ballPos);
         ballPos = Ball.transform.position;
 
-        if (ballPos != null && ballPos.y >= -5)
+        if (ballPos != null && ballPos.y >= -5 && ballPos.y <= 4)
         {
             anim.SetFloat("BallPos", 1);
         }
@@ -27,6 +27,11 @@ public class CameraManager : MonoBehaviour
         if (ballPos != null && ballPos.y <= -5)
         {
             anim.SetFloat("BallPos", -1);
+        }
+
+        if (ballPos != null && ballPos.y >= 6)
+        {
+            anim.SetFloat("BallPos", 2);
         }
     }
 }
