@@ -6,7 +6,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] RightFlipper;
     [SerializeField] GameObject ball;
     [SerializeField] GameObject[] taihou;
+    [SerializeField] GameObject yuka;
     [SerializeField] float torqueForce;
+
+    public bool gameOver;
 
     Rigidbody2D[] leftRig;
     Rigidbody2D[] rightRig;
@@ -15,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        gameOver = false;
+
         LeftFlipper = GameObject.FindGameObjectsWithTag("Left");
         RightFlipper = GameObject.FindGameObjectsWithTag("Right");
         ballRig = ball.GetComponent<Rigidbody2D>();
@@ -38,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKey(KeyCode.A))
         {
             AddTorque(leftRig, torqueForce);
@@ -52,10 +58,17 @@ public class GameManager : MonoBehaviour
         {
             AddTorque(leftRig, torqueForce);
             AddTorque(rightRig, -torqueForce);
+            Invoke("GameStart", 0.3f);
         }
-    }
 
-   
+        if (ball.transform.position.y <= -26f)
+        {
+            gameOver = true;
+        }
+
+
+
+    }
 
 
 
@@ -67,4 +80,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void GameStart()
+    {
+        Destroy(yuka);
+    }
 }
