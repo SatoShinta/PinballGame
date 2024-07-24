@@ -301,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 331005948}
   - component: {fileID: 331005947}
+  - component: {fileID: 331005949}
   m_Layer: 0
   m_Name: Result
   m_TagString: Untagged
@@ -322,7 +323,13 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: -6515325027043985444, guid: ce3de2798c283394bb3684cddd084b81, type: 2}
+    value: {fileID: 1308952230}
+  - key: {fileID: 3290692876924308911, guid: ce3de2798c283394bb3684cddd084b81, type: 2}
+    value: {fileID: 220046088}
+  - key: {fileID: 7219785042366108788, guid: ce3de2798c283394bb3684cddd084b81, type: 2}
+    value: {fileID: 786907443}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &331005948
@@ -340,6 +347,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &331005949
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331005946}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &786907440
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,8 +378,9 @@ GameObject:
   m_Component:
   - component: {fileID: 786907442}
   - component: {fileID: 786907441}
+  - component: {fileID: 786907443}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,12 +447,33 @@ Transform:
   m_GameObject: {fileID: 786907440}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.93, y: 0, z: 0}
+  m_LocalPosition: {x: -12.99, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &786907443
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786907440}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 621c50b4610f5d34eaf4ed57096e10f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1079726654
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74849e19f1ed9141867ddc7fa75fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ball: {fileID: 786907440}
+  Ball: {fileID: 0}
   nowBallYText: {fileID: 1480794025}
   bestBallYText: {fileID: 220046085}
   manager: {fileID: 0}
@@ -940,7 +990,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

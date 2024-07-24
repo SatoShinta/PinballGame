@@ -23,28 +23,35 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        nowBallYText.text = ballPosY.ToString();
-        ballPosY = Ball.transform.position.y;
-
-        if (ballPosY > bestPosy)
+        if(Ball != null )
         {
-            BestBallPosUpdate();
-        }
+            nowBallYText.text = ballPosY.ToString();
+            ballPosY = Ball.transform.position.y;
+            if (ballPosY > bestPosy)
+            {
+                BestBallPosUpdate();
+            }
 
-        if (manager != null && manager.gameOver == true)
-        {
-            ballPosY = 0;
+            if (manager != null && manager.gameOver == true)
+            {
+                ballPosY = 0;
+            }
         }
+      
     }
 
     void BestBallPosUpdate()
     {
-        bestPosy = ballPosY;
-
-        if(bestPosy > bestBallY)
+        if(Ball != null)
         {
-            bestBallY = bestPosy;
-            bestBallYText.text = bestBallY.ToString();
+            bestPosy = ballPosY;
+
+            if (bestPosy > bestBallY)
+            {
+                bestBallY = bestPosy;
+                bestBallYText.text = bestBallY.ToString();
+            }
         }
+      
     }
 }
