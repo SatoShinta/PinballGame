@@ -392,6 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  scoreManager: {fileID: 0}
 --- !u!1 &140902930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1005,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19444779, g: 0.4056604, b: 0.12820399, a: 0}
+  m_BackGroundColor: {r: 0.19607845, g: 0.4039216, b: 0.12941177, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
