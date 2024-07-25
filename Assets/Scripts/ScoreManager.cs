@@ -18,7 +18,6 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         bestBallY = 0;
-        score = 10;
         ballPosY = 0;
         // bestPosy = 0;
 
@@ -42,9 +41,26 @@ public class ScoreManager : MonoBehaviour
             {
                 ballPosY = 0;
             }
+
+            switch (bestBallY)
+            {
+                case 100f:
+                    ScoreUpdate(100); break;
+
+
+                case 200f:
+                    ScoreUpdate(200); break;
+            }
         }
 
     }
+
+    public void ScoreUpdate(int scr)
+    {
+        score += scr;
+        bestScoreText.text = score.ToString();
+    }
+
 
     void BestBallPosUpdate()
     {
@@ -63,7 +79,7 @@ public class ScoreManager : MonoBehaviour
     public void ResultScore()
     {
         bestBallY += score;
-        bestBallYText.text = bestBallY.ToString() ;
+        bestBallYText.text = bestBallY.ToString();
         Debug.Log(bestBallY);
     }
 }
