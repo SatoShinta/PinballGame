@@ -7,19 +7,20 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] Text nowBallYText;
     [SerializeField] Text bestBallYText;
     [SerializeField] Text bestScoreText;
+    [SerializeField] Text ResultScoreText;
     [SerializeField] GameManager manager;
 
     bool scoreUpdate = false;
     int ballPosY;
     int bestPosy;
+    int score;
     public static int bestBallY;
-    public static int score;
+    public static int extraScore;
 
 
     private void Start()
     {
         ballPosY = 0;
-        score = 0;
 
         bestScoreText.text =("追加得点  " + score.ToString());
         bestBallYText.text =("最高記録  " + bestBallY.ToString());
@@ -63,7 +64,9 @@ public class ScoreManager : MonoBehaviour
     public void ScoreUpdate(int scr)
     {
         score += scr;
+        extraScore += score;
         bestScoreText.text =("追加得点  " + score.ToString());
+        ResultScoreText.text = ("追加得点　" + extraScore.ToString());
         Debug.Log(score);
     }
 
@@ -84,7 +87,7 @@ public class ScoreManager : MonoBehaviour
     }
     public void ResultScore()
     {
-        bestBallY += score;
+        bestBallY += extraScore;
         bestBallYText.text =("最終得点 " + bestBallY.ToString());
         Debug.Log(bestBallY);
     }
