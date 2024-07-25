@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,8 +9,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] taihou;
     [SerializeField] GameObject yuka;
     [SerializeField] float torqueForce;
+    [SerializeField, Header("スタートテキスト")] Text stertText;
 
     public bool gameOver;
+    float gameTimer;
 
     Rigidbody2D[] leftRig;
     Rigidbody2D[] rightRig;
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        gameTimer += Time.deltaTime;
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -58,7 +62,11 @@ public class GameManager : MonoBehaviour
         {
             AddTorque(leftRig, torqueForce);
             AddTorque(rightRig, -torqueForce);
-            Invoke("GameStart", 0.3f);
+            if(gameTimer >= 2f && stertText.enabled == true)
+            {
+                Invoke("GameStart", 0.3f);
+                stertText.enabled = false;
+            }
         }
 
         if (ball.transform.position.y <= -26f)
