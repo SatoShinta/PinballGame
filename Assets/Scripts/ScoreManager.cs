@@ -9,20 +9,20 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] Text bestScoreText;
     [SerializeField] GameManager manager;
 
-    float ballPosY;
-    float bestPosy;
-    public static float bestBallY;
-    public static float score;
+    bool scoreUpdate = false;
+    int ballPosY;
+    int bestPosy;
+    public static int bestBallY;
+    public static int score;
 
 
     private void Start()
     {
-        bestBallY = 0;
         ballPosY = 0;
-        // bestPosy = 0;
+        score = 0;
 
-        bestScoreText.text = score.ToString();
-        bestBallYText.text = bestBallY.ToString();
+        bestScoreText.text =("追加得点  " + score.ToString());
+        bestBallYText.text =("最高記録  " + bestBallY.ToString());
         manager = FindObjectOfType<GameManager>();
     }
 
@@ -30,8 +30,8 @@ public class ScoreManager : MonoBehaviour
     {
         if (Ball != null)
         {
-            nowBallYText.text = ballPosY.ToString();
-            ballPosY = Ball.transform.position.y;
+            nowBallYText.text =("現在位置  " + ballPosY.ToString());
+            ballPosY = Mathf.RoundToInt(Ball.transform.position.y);
             if (ballPosY > bestPosy)
             {
                 BestBallPosUpdate();
@@ -42,15 +42,20 @@ public class ScoreManager : MonoBehaviour
                 ballPosY = 0;
             }
 
-            switch (bestBallY)
+            if(!scoreUpdate)
             {
-                case 100f:
-                    ScoreUpdate(100); break;
-
-
-                case 200f:
-                    ScoreUpdate(200); break;
+                if(bestBallY >= 100)
+                {
+                    ScoreUpdate(100);
+                    scoreUpdate = true;
+                }
+                else if(bestBallY >= 200)
+                {
+                    ScoreUpdate(200);
+                    scoreUpdate = true;
+                }
             }
+           
         }
 
     }
@@ -58,7 +63,8 @@ public class ScoreManager : MonoBehaviour
     public void ScoreUpdate(int scr)
     {
         score += scr;
-        bestScoreText.text = score.ToString();
+        bestScoreText.text =("追加得点  " + score.ToString());
+        Debug.Log(score);
     }
 
 
@@ -71,7 +77,7 @@ public class ScoreManager : MonoBehaviour
             if (bestPosy > bestBallY)
             {
                 bestBallY = bestPosy;
-                bestBallYText.text = bestBallY.ToString();
+                bestBallYText.text =("最高記録  " + bestBallY.ToString());
             }
         }
 
@@ -79,7 +85,7 @@ public class ScoreManager : MonoBehaviour
     public void ResultScore()
     {
         bestBallY += score;
-        bestBallYText.text = bestBallY.ToString();
+        bestBallYText.text =("最終得点 " + bestBallY.ToString());
         Debug.Log(bestBallY);
     }
 }
