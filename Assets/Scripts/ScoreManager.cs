@@ -20,9 +20,12 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
+        scoreUpdate = false ;
+        Debug.Log(score);
         ballPosY = 0;
+        score = 0;
 
-        bestScoreText.text = ("追加得点  " + score.ToString());
+        bestScoreText.text = ("追加得点  " + 0);
         bestBallYText.text = ("最高記録  " + bestBallY.ToString());
         
         manager = FindObjectOfType<GameManager>();
@@ -68,7 +71,6 @@ public class ScoreManager : MonoBehaviour
         extraScore += score;
         bestScoreText.text = ("追加得点  " + score.ToString());
         ResultScoreText.text = ("追加得点　" + extraScore.ToString());
-        Debug.Log(score);
     }
 
 
@@ -90,7 +92,6 @@ public class ScoreManager : MonoBehaviour
     {
         bestBallY += extraScore;
         bestBallYText.text = ("最終得点 " + bestBallY.ToString());
-        Debug.Log(bestBallY);
     }
     public void Result()
     {
