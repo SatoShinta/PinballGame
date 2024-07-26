@@ -25,7 +25,7 @@ public class ScoreManager : MonoBehaviour
         ballPosY = 0;
         score = 0;
 
-        bestScoreText.text = ("í«â¡ìæì_  " + 0);
+        bestScoreText.text = ("í«â¡ìæì_  " + score.ToString());
         bestBallYText.text = ("ç≈çÇãLò^  " + bestBallY.ToString());
         
         manager = FindObjectOfType<GameManager>();
