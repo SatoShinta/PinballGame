@@ -14,20 +14,25 @@ public class ScoreManager : MonoBehaviour
     int ballPosY;
     int bestPosy;
     int score;
+
+    //シーンをまたいでも持ち越される値
     public static int bestBallY;
     public static int extraScore;
 
 
     private void Start()
     {
+        //追加得点の処理を行うかどうかのフラグ
         scoreUpdate = false ;
         Debug.Log(score);
         ballPosY = 0;
         score = 0;
 
+        //初期化処理？（できてるかどうかわからない）
         bestScoreText.text = ("追加得点  " + score.ToString());
         bestBallYText.text = ("最高記録  " + bestBallY.ToString());
         
+        //GameManagerをセットする
         manager = FindObjectOfType<GameManager>();
     }
 
