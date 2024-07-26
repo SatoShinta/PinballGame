@@ -38,29 +38,42 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
+        //もしBallにオブジェクトがアタッチされていたら
         if (Ball != null)
         {
+            //現在位置のテキストを更新
             nowBallYText.text = ("現在位置  " + ballPosY.ToString());
+            //Ballの位置をfloat型からint型に変換して代入
             ballPosY = Mathf.RoundToInt(Ball.transform.position.y);
+
+            //ボールの位置が最高地点より大きくなったら
             if (ballPosY > bestPosy)
             {
+                //このメソッドを実行する
                 BestBallPosUpdate();
             }
 
+            //gamemanagerのゲームオーバーフラグがtrueの時
             if (manager != null && manager.gameOver == true)
             {
+                //現在位置を０にする
                 ballPosY = 0;
             }
 
+            //scoreUpdateフラグがfalseの時
             if (!scoreUpdate)
             {
+                //最高地点が100より大きくなったら
                 if (bestBallY >= 100)
                 {
+                    //追加得点に100を追加し、scoreUpdateフラグをtrueにする
                     ScoreUpdate(100);
                     scoreUpdate = true;
                 }
-                else if (bestBallY >= 200)
+                //最高地点が200より大きくなったら
+                else if (bestBallY >= 200 && scoreUpdate == true)
                 {
+                    //追加得点に200を追加する
                     ScoreUpdate(200);
                     scoreUpdate = true;
                 }
@@ -70,17 +83,23 @@ public class ScoreManager : MonoBehaviour
 
     }
 
+    //追加得点の処理をするメソッド
     public void ScoreUpdate(int scr)
     {
+        //scoreに引数を代入する
         score += scr;
+        //extraScoreにscoreの値を代入する
         extraScore += score;
+        //指定したテキストにscoreとextraScoreの値を入れる
         bestScoreText.text = ("追加得点  " + score.ToString());
         ResultScoreText.text = ("追加得点　" + extraScore.ToString());
     }
 
 
+    //Ballの最高地点を更新するメソッド
     void BestBallPosUpdate()
     {
+        //Ballにオブジェクトがアタッチされているとき
         if (Ball != null)
         {
             bestPosy = ballPosY;
