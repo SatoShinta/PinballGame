@@ -7,7 +7,6 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] Text nowBallYText;
     [SerializeField] Text bestBallYText;
     [SerializeField] Text bestScoreText;
-    [SerializeField] Text ResultScoreText;
     [SerializeField] GameManager manager;
 
     bool scoreUpdate = false;
@@ -25,7 +24,7 @@ public class ScoreManager : MonoBehaviour
         //追加得点の処理を行うかどうかのフラグ
         scoreUpdate = false ;
         Debug.Log(score);
-        bestBallY = 0 ;
+        
         extraScore = 0 ;
         ballPosY = 0;
         score = 0;
@@ -62,6 +61,7 @@ public class ScoreManager : MonoBehaviour
                 ballPosY = 0;
             }
 
+            //↓↓ここを直す！！↓↓
             //scoreUpdateフラグがfalseの時
             if (!scoreUpdate)
             {
@@ -94,7 +94,6 @@ public class ScoreManager : MonoBehaviour
         extraScore += score;
         //指定したテキストにscoreとextraScoreの値を入れる
         bestScoreText.text = ("追加得点  " + score.ToString());
-        ResultScoreText.text = ("追加得点　" + extraScore.ToString());
     }
 
 
@@ -114,14 +113,5 @@ public class ScoreManager : MonoBehaviour
         }
 
     }
-    public void ResultScore()
-    {
-        bestBallY += extraScore;
-        bestBallYText.text = ("最終得点 " + bestBallY.ToString());
-    }
-    public void Result()
-    {
-        bestBallYText.text = ("最高記録  " + bestBallY.ToString());
-        ResultScoreText.text = ("追加得点　" + extraScore.ToString());
-    }
+  
 }
