@@ -11,7 +11,7 @@ public class EnemyOfBall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            Instantiate(madeOfEnemy, this.transform);
+            Instantiate(madeOfEnemy,transform.position, Quaternion.identity);
             Invoke("EnemyBall", 0.2f);
         }
     }
