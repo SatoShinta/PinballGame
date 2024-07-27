@@ -8,14 +8,15 @@ TagManager:
   - Right
   - Ball
   - taihou
+  - EnemyBall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - EnemyBall
   - 
   - 
   - 

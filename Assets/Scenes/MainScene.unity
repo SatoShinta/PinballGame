@@ -5082,7 +5082,7 @@ GameObject:
   - component: {fileID: 1498828675}
   - component: {fileID: 1498828674}
   - component: {fileID: 1498828678}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}

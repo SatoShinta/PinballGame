@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7373636148200720333}
   - component: {fileID: 6801974148962558671}
   - component: {fileID: 9044585670914025325}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBall
-  m_TagString: Untagged
+  m_TagString: EnemyBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.7
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

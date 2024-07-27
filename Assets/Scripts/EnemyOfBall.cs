@@ -6,6 +6,7 @@ public class EnemyOfBall : MonoBehaviour
 {
     [SerializeField, Header("ìGÉ{Å[Éã")] GameObject madeOfEnemy;
 
+    int hitCounter;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,6 +14,15 @@ public class EnemyOfBall : MonoBehaviour
         {
             Instantiate(madeOfEnemy,transform.position, Quaternion.identity);
             Invoke("EnemyBall", 0.2f);
+        }
+
+        if (collision.gameObject.CompareTag("EnemyBall"))
+        {
+            hitCounter++;
+            if(hitCounter == 3)
+            {
+                EnemyBall();
+            }
         }
     }
 
