@@ -396,9 +396,9 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-          m_MethodName: ResultScore
+        - m_Target: {fileID: 1704697576}
+          m_TargetAssemblyTypeName: ResultScore, Assembly-CSharp
+          m_MethodName: ScoreAdd
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

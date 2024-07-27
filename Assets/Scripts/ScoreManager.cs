@@ -25,6 +25,8 @@ public class ScoreManager : MonoBehaviour
         //追加得点の処理を行うかどうかのフラグ
         scoreUpdate = false ;
         Debug.Log(score);
+        bestBallY = 0 ;
+        extraScore = 0 ;
         ballPosY = 0;
         score = 0;
 
