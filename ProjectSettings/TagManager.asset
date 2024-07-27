@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - taihou
   - EnemyBall
+  - spawn1
   layers:
   - Default
   - TransparentFX
