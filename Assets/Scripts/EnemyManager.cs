@@ -12,9 +12,11 @@ public class EnemyManager : MonoBehaviour
     {
         // スポーン位置を自動で設定
         SpawnPositions("spawn1", spownpos1);
+        SpawnPositions("spawn2", spownpos2);
 
         // 敵を生成
         EnemyInstantiate1();
+        EnemyInstantiate2();
     }
 
 
