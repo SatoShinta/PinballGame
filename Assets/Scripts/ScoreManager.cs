@@ -9,48 +9,57 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] Text bestScoreText;
     [SerializeField] GameManager manager;
 
-    bool scoreUpdate = false;
-    int ballPosY;
-    int bestPosy;
-    int score;
+    private int ballPosY;
+    private int bestPosy;
+    private int score;
 
     //シーンをまたいでも持ち越される値
     public static int bestBallY;
     public static int extraScore;
 
+    // スコアを追加するしきい値の配列
+    private int[] thresholds = { 100, 200, 300 };
+    private int thresholdIndex = 0;
+
+    // しきい値を超えたかどうかのフラグ
+    private bool[] hasScored;
 
     private void Start()
     {
-        //追加得点の処理を行うかどうかのフラグ
-        scoreUpdate = false ;
-        Debug.Log(score);
-        
-        extraScore = 0 ;
+
+        if (nowBallYText == null) Debug.LogError("nowBallYTextがアサインされていません。");
+        if (bestBallYText == null) Debug.LogError("bestBallYTextがアサインされていません。");
+        if (bestScoreText == null) Debug.LogError("bestScoreTextがアサインされていません。");
+
+        // GameManagerをセットする
+        manager = FindObjectOfType<GameManager>();
+        if (manager == null)
+        {
+            Debug.LogError("GameManagerがシーンに見つかりません。");
+        }
+
+        extraScore = 0;
         ballPosY = 0;
         score = 0;
 
-        //初期化処理？（できてるかどうかわからない）
         bestScoreText.text = ("追加得点  " + score.ToString());
         bestBallYText.text = ("最高記録  " + bestBallY.ToString());
-        
-        //GameManagerをセットする
-        manager = FindObjectOfType<GameManager>();
+
+        // フラグの初期化
+        hasScored = new bool[thresholds.Length];
     }
 
     private void Update()
     {
-        //もしBallにオブジェクトがアタッチされていたら
         if (Ball != null)
         {
-            //現在位置のテキストを更新
-            nowBallYText.text = ("現在位置  " + ballPosY.ToString());
-            //Ballの位置をfloat型からint型に変換して代入
             ballPosY = Mathf.RoundToInt(Ball.transform.position.y);
+            //ボールの現在位置の更新を行う
+            nowBallYText.text = ("現在位置  " + ballPosY.ToString());
 
             //ボールの位置が最高地点より大きくなったら
             if (ballPosY > bestPosy)
             {
-                //このメソッドを実行する
                 BestBallPosUpdate();
             }
 
@@ -61,46 +70,35 @@ public class ScoreManager : MonoBehaviour
                 ballPosY = 0;
             }
 
-            //↓↓ここを直す！！↓↓
-            //scoreUpdateフラグがfalseの時
-            if (!scoreUpdate)
+            for (int i = thresholdIndex; i < thresholds.Length; i++)
             {
-                //最高地点が100より大きくなったら
-                if (bestBallY >= 100)
+                //ボールの位置がしきい値を超えて、その値を一回でも通っていなかったら
+                if (ballPosY > thresholds[i] && !hasScored[i])
                 {
-                    //追加得点に100を追加し、scoreUpdateフラグをtrueにする
-                    ScoreUpdate(100);
-                    scoreUpdate = true;
-                }
-                //最高地点が200より大きくなったら
-                else if (bestBallY >= 200 && scoreUpdate == true)
-                {
-                    //追加得点に200を追加する
-                    ScoreUpdate(200);
-                    scoreUpdate = true;
+                    //スコアをアップデートして、その高さを通ったことを記録する
+                    ScoreUpdate(thresholds[i]);
+                    // スコアを追加したことを記録
+                    hasScored[i] = true;
                 }
             }
-
         }
-
+        else
+        {
+            Debug.LogError("Ballオブジェクトがシーンに見つかりません。");
+        }
     }
 
     //追加得点の処理をするメソッド
     public void ScoreUpdate(int scr)
     {
-        //scoreに引数を代入する
         score += scr;
-        //extraScoreにscoreの値を代入する
         extraScore += score;
-        //指定したテキストにscoreとextraScoreの値を入れる
         bestScoreText.text = ("追加得点  " + score.ToString());
     }
-
 
     //Ballの最高地点を更新するメソッド
     void BestBallPosUpdate()
     {
-        //Ballにオブジェクトがアタッチされているとき
         if (Ball != null)
         {
             bestPosy = ballPosY;
@@ -111,7 +109,5 @@ public class ScoreManager : MonoBehaviour
                 bestBallYText.text = ("最高記録  " + bestBallY.ToString());
             }
         }
-
     }
-  
 }
