@@ -24,6 +24,13 @@ public class ScoreManager : MonoBehaviour
     // ‚µ‚«‚¢’l‚ð’´‚¦‚½‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
     private bool[] hasScored;
 
+
+    public void Awake()
+    {
+        extraScore = 0;
+        bestBallY = 0;
+    }
+
     private void Start()
     {
 
