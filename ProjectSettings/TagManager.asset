@@ -11,6 +11,8 @@ TagManager:
   - EnemyBall
   - spawn1
   - spawn2
+  - Enemy
+  - Enemy2
   layers:
   - Default
   - TransparentFX

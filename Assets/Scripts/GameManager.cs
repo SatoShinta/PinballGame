@@ -10,9 +10,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject yuka;
     [SerializeField] float torqueForce;
     [SerializeField, Header("スタートテキスト")] Text stertText;
+    [SerializeField, Header("タイマー")] Text timer;
 
     public bool gameOver;
+    bool timerStart;
     float gameTimer;
+    float gameOverTimer = 60;
 
     Rigidbody2D[] leftRig;
     Rigidbody2D[] rightRig;
@@ -47,6 +50,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         gameTimer += Time.deltaTime;
+        timer.text = ("残り時間" + gameOverTimer);
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -66,13 +70,21 @@ public class GameManager : MonoBehaviour
             {
                 Invoke("GameStart", 0.3f);
                 stertText.enabled = false;
+                timerStart = true;
             }
         }
 
-        if (ball.transform.position.y <= -26f)
+        if(timerStart == true)
+        {
+            gameOverTimer -= Time.deltaTime;
+        }
+
+        if (ball.transform.position.y <= -26f || gameOverTimer <= 0f)
         {
             gameOver = true;
         }
+
+        
 
 
 

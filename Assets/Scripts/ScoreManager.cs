@@ -45,7 +45,6 @@ public class ScoreManager : MonoBehaviour
             Debug.LogError("GameManagerがシーンに見つかりません。");
         }
 
-        extraScore = 0;
         ballPosY = 0;
         score = 0;
 
@@ -58,6 +57,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(extraScore);
         if (Ball != null)
         {
             ballPosY = Mathf.RoundToInt(Ball.transform.position.y);
@@ -100,7 +100,7 @@ public class ScoreManager : MonoBehaviour
     {
         score += scr;
         extraScore += score;
-        bestScoreText.text = ("追加得点  " + score.ToString());
+        bestScoreText.text = ("追加得点  " + extraScore.ToString());
     }
 
     //Ballの最高地点を更新するメソッド
