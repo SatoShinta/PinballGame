@@ -4,11 +4,9 @@ public class CameraManager : MonoBehaviour
 {
     [SerializeField] GameObject Ball;
     Animator anim;
-    Vector2 ballPos;
 
     private void Start()
     {
-        Ball.GetComponent<Transform>();
         anim = GetComponent<Animator>();
         anim.SetBool("First", true);
         anim.SetFloat("BallPos", 1);
@@ -16,33 +14,27 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-       // Debug.Log(ballPos);
-        ballPos = Ball.transform.position;
+        Vector3 ballPos = Ball.transform.position;
 
-        if (ballPos != null && ballPos.y >= -5 && ballPos.y <= 4)
-        {
-            anim.SetFloat("BallPos", 1);
-        }
-
-        if (ballPos != null && ballPos.y <= -5 && ballPos.y >= -13.84f)
-        {
-            anim.SetFloat("BallPos", -1);
-        }
-
-        if (ballPos != null && ballPos.y >= 6)
-        {
-            anim.SetFloat("BallPos", 2);
-        }
-
-        if(ballPos != null && ballPos.y <= -13.85f)
-        {
-            anim.SetFloat("BallPos", -1.5f);
-        }
-
-        if (ballPos != null && ballPos.y >= 26f)
+        if (ballPos.y >= 26f)
         {
             anim.SetFloat("BallPos", 2.5f);
         }
-
+        else if (ballPos.y >= 6)
+        {
+            anim.SetFloat("BallPos", 2);
+        }
+        else if (ballPos.y >= -5)
+        {
+            anim.SetFloat("BallPos", 1);
+        }
+        else if (ballPos.y >= -13.84f)
+        {
+            anim.SetFloat("BallPos", -1);
+        }
+        else
+        {
+            anim.SetFloat("BallPos", -1.5f);
+        }
     }
 }
