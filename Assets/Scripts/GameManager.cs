@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         gameTimer += Time.deltaTime;
-        timer.text = ("c‚èŠÔ" + gameOverTimer);
+        timer.text = ("c‚èŠÔ" + (int)gameOverTimer);
 
         if (Input.GetKey(KeyCode.A))
         {
