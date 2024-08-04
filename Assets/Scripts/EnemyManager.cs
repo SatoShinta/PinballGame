@@ -29,14 +29,10 @@ public class EnemyManager : MonoBehaviour
     // enemy_3_spawnƒtƒ‰ƒO‚ªON‚É‚È‚Á‚½‚ç3í—Ş–Ú‚Ì“G‚ğoŒ»‚³‚¹‚é
     public void Update()
     {
-        if(enemy3action != null)
+        if (enemy_3_spawn == true)
         {
-            if (enemy_3_spawn)
-            {
-                EnemyInstantiate3();
-            }
+            EnemyInstantiate3();
         }
-        
     }
 
 

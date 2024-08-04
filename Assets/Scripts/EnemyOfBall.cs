@@ -33,6 +33,15 @@ public class EnemyOfBall : MonoBehaviour
         }
     }
 
+
+    public void Update()
+    {
+        if(this.transform.position.y <= -14)
+        {
+            EnemyBall();
+        }
+    }
+
     public void EnemyBall()
     {
         Destroy(gameObject);

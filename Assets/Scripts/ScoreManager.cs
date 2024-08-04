@@ -57,7 +57,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(extraScore);
+       // Debug.Log(extraScore);
         if (Ball != null)
         {
             ballPosY = Mathf.RoundToInt(Ball.transform.position.y);

@@ -5,16 +5,27 @@ public class BallCtr : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
     [SerializeField] GameObject[] taihou;
+    [SerializeField] GameObject enemy_3_spawn;
     [SerializeField] ScoreManager scoreManager;
     [SerializeField] EnemyManager EnemyManager;
 
     Rigidbody2D rigidbody2;
     Collider2D taihoucol;
+    public int f_counter1;
 
 
     private void Start()
     {
         rigidbody2 = GetComponent<Rigidbody2D>();
+        f_counter1 = 0;
+    }
+
+    public void Update()
+    {
+        if(f_counter1 == 1)
+        {
+            EnemyManager.enemy_3_spawn = false;
+        }
     }
 
 
@@ -39,16 +50,16 @@ public class BallCtr : MonoBehaviour
             default:
                 break;
         }
-        if (collision.gameObject.Equals(EnemyManager.enemy3action))
-        {
-           EnemyManager.enemy_3_spawn = true;
-        }
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.Equals(EnemyManager.enemy3action))
+        Debug.Log("aaa");
+        if (collision.gameObject.Equals(enemy_3_spawn))
         {
+            f_counter1 = 1;
+            Destroy(enemy_3_spawn);
             EnemyManager.enemy_3_spawn = true;
         }
     }

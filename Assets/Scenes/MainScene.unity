@@ -3232,7 +3232,8 @@ MonoBehaviour:
   - {fileID: 4866001106718797132, guid: b0d9669a0d9f42d428aa064d668cbd26, type: 3}
   enemys2:
   - {fileID: 61060502131801071, guid: bab40fb02752f4b4380d13fadf3cf337, type: 3}
-  enemys3: []
+  enemys3:
+  - {fileID: 4866001106718797132, guid: a9bbd3d80dd2ff14b9fb5e71038eb26e, type: 3}
   spownpos1: []
   spownpos2: []
   spownpos3: []
@@ -7664,8 +7665,9 @@ MonoBehaviour:
   - {fileID: 224065515}
   - {fileID: 856797874}
   - {fileID: 1280384076}
+  enemy_3_spawn: {fileID: 585565217}
   scoreManager: {fileID: 113837963}
-  EnemyManager: {fileID: 0}
+  EnemyManager: {fileID: 649890971}
 --- !u!4 &1524306027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
@@ -9756,10 +9758,10 @@ Canvas:
   m_GameObject: {fileID: 2118882698}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
