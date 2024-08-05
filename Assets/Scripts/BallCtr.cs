@@ -20,13 +20,7 @@ public class BallCtr : MonoBehaviour
         f_counter1 = 0;
     }
 
-    public void Update()
-    {
-        if(f_counter1 == 1)
-        {
-            EnemyManager.enemy_3_spawn = false;
-        }
-    }
+   
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,11 +50,11 @@ public class BallCtr : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("aaa");
-        if (collision.gameObject.Equals(enemy_3_spawn))
+        if (collision.gameObject.Equals(enemy_3_spawn) && EnemyManager.enemy_3_spawn == false)
         {
-            f_counter1 = 1;
-            Destroy(enemy_3_spawn);
             EnemyManager.enemy_3_spawn = true;
+            EnemyManager.EnemyInstantiate3();
+            f_counter1 = 1;
         }
     }
 
