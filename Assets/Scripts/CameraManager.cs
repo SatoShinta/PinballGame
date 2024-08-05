@@ -17,7 +17,7 @@ public class CameraManager : MonoBehaviour
         Vector3 ballPos = Ball.transform.position;
         if (ballPos.y >= 82f)
         {
-            anim.SetFloat("Ballpos", 4f);
+            anim.SetFloat("BallPos", 4f);
         }
         else if (ballPos.y >= 44f)
         {
