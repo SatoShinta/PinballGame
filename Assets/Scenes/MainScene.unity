@@ -7668,6 +7668,7 @@ MonoBehaviour:
   enemy_3_spawn: {fileID: 585565217}
   scoreManager: {fileID: 113837963}
   EnemyManager: {fileID: 649890971}
+  f_counter1: 0
 --- !u!4 &1524306027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
@@ -9741,7 +9742,7 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 540}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
