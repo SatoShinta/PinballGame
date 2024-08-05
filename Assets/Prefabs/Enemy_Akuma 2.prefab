@@ -189,7 +189,7 @@ MonoBehaviour:
   mazzle: {fileID: 5238901022690980116}
   bulletPrefab: {fileID: 8104593038214844021, guid: 93bc598add2821c449a89054f662b9af, type: 3}
   bulletSpeed: 10
-  fireBulletSpeed: 1
+  fireBulletSpeed: 2.5
 --- !u!1 &5238901022690980116
 GameObject:
   m_ObjectHideFlags: 0

@@ -264,6 +264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -6.4009867
@@ -500,6 +504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -9.883842
@@ -582,6 +590,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1083,6 +1095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -14.583842
@@ -1295,7 +1311,7 @@ GameObject:
   - component: {fileID: 234822420}
   m_Layer: 0
   m_Name: Flippertati
-  m_TagString: Untagged
+  m_TagString: Flipper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1371,6 +1387,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1449,6 +1469,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1590,6 +1614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 14.826158
@@ -1668,6 +1696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -17.983843
@@ -1745,6 +1777,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1854,6 +1890,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1987,6 +2027,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2408,6 +2452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -10.962649
@@ -2485,6 +2533,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2755,6 +2807,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -3134,6 +3190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 8.226157
@@ -3397,6 +3457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 4.7273498
@@ -3474,6 +3538,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -3725,6 +3793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -8.362649
@@ -3803,6 +3875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -5.44265
@@ -3875,6 +3951,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -3954,21 +4034,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 8.116158
+      value: 16.076157
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 40.253643
+      value: 35.713326
       objectReference: {fileID: 0}
     - target: {fileID: 4270763759476378174, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 11.742157
+      value: 19.702156
       objectReference: {fileID: 0}
     - target: {fileID: 4270763759476378174, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 40.253643
+      value: 35.713326
       objectReference: {fileID: 0}
     - target: {fileID: 8361665717220707618, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4133,6 +4217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -24.803843
@@ -4210,6 +4298,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -4485,6 +4577,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -4778,6 +4874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 11.377351
@@ -4855,6 +4955,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -5291,6 +5395,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1524306027}
+  - {fileID: 1299567306}
+  - {fileID: 1934626979}
+  - {fileID: 1946463030}
   - {fileID: 9729500}
   - {fileID: 585994424}
   - {fileID: 1346043477}
@@ -5309,6 +5416,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -5784,6 +5895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 7.4173503
@@ -6031,9 +6146,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 16.076157
+      value: -19.683842
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -6041,7 +6160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4270763759476378174, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 19.702156
+      value: -16.057842
       objectReference: {fileID: 0}
     - target: {fileID: 4270763759476378174, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -6369,6 +6488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 20.976158
@@ -6512,6 +6635,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8361665717220707618, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
   m_PrefabInstance: {fileID: 974777429}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1299567305
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1018672126}
+    m_Modifications:
+    - target: {fileID: 6070893244479935639, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_Name
+      value: bounce (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09661615
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+--- !u!4 &1299567306 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+  m_PrefabInstance: {fileID: 1299567305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1307274411
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,6 +6838,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -7060,7 +7249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 36.09
+      value: 39.02
       objectReference: {fileID: 0}
     - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7920,6 +8109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftFlipper_Big
       objectReference: {fileID: 0}
+    - target: {fileID: 693118015636609920, guid: a13369d0293930947b0a60cf0848be90, type: 3}
+      propertyPath: m_TagString
+      value: Left
+      objectReference: {fileID: 0}
     - target: {fileID: 5111189396606825228, guid: a13369d0293930947b0a60cf0848be90, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -11.937626
@@ -7993,6 +8186,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -8491,6 +8688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -7.783843
@@ -8569,21 +8770,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -9.883842
+      value: -1.2838428
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 40.253643
+      value: 44.803326
       objectReference: {fileID: 0}
     - target: {fileID: 4270763759476378174, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -6.2578425
+      value: 2.3421571
       objectReference: {fileID: 0}
     - target: {fileID: 4270763759476378174, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 40.253643
+      value: 44.803326
       objectReference: {fileID: 0}
     - target: {fileID: 8361665717220707618, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8678,6 +8883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -4.85265
@@ -8755,6 +8964,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -8927,6 +9140,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923635985}
   m_CullTransparentMesh: 1
+--- !u!1001 &1934626978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1018672126}
+    m_Modifications:
+    - target: {fileID: 6070893244479935639, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_Name
+      value: bounce (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09661615
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+--- !u!4 &1934626979 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+  m_PrefabInstance: {fileID: 1934626978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1938282462
 GameObject:
   m_ObjectHideFlags: 0
@@ -8958,6 +9233,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1137648618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1946463029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1018672126}
+    m_Modifications:
+    - target: {fileID: 6070893244479935639, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_Name
+      value: bounce (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09661615
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+--- !u!4 &1946463030 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8488405706827664159, guid: 0cc8cb9a2a89cb444a6834f409d981bd, type: 3}
+  m_PrefabInstance: {fileID: 1946463029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1966614883
 GameObject:
   m_ObjectHideFlags: 0
@@ -9201,6 +9538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightFlipper_Big
       objectReference: {fileID: 0}
+    - target: {fileID: 6449411336401803039, guid: c6d2fed3b9285874687f72d6ff21abc1, type: 3}
+      propertyPath: m_TagString
+      value: Right
+      objectReference: {fileID: 0}
     - target: {fileID: 7227480988376345669, guid: c6d2fed3b9285874687f72d6ff21abc1, type: 3}
       propertyPath: m_LocalScale.x
       value: 9.0473995
@@ -9261,6 +9602,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -9380,6 +9725,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -9625,6 +9974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 1.0961571
@@ -9830,6 +10183,10 @@ PrefabInstance:
     - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_Name
       value: Flippers (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
       objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -10063,6 +10420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flippers
       objectReference: {fileID: 0}
+    - target: {fileID: 1240981951186002442, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
+      propertyPath: m_TagString
+      value: Flipper
+      objectReference: {fileID: 0}
     - target: {fileID: 1422625486799042048, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: -1.5796943
@@ -10151,7 +10512,7 @@ GameObject:
   - component: {fileID: 3633493932900171158}
   m_Layer: 0
   m_Name: Flippers
-  m_TagString: Untagged
+  m_TagString: Flipper
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
