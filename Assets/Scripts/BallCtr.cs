@@ -15,6 +15,7 @@ public class BallCtr : MonoBehaviour
     Animator animator;
     public int f_counter1;
     public int destroyCounter;
+    public bool Clear;
 
 
     private void Start()
@@ -77,9 +78,10 @@ public class BallCtr : MonoBehaviour
         if (collision.gameObject.CompareTag("Clear"))
         {
             Instantiate(Clear_Ball, transform.position, Quaternion.identity);
-            animator.SetBool("Clear", true);
+           // animator.SetBool("Clear", true);
             gameManager.timerStart = false;
             this.gameObject.SetActive(false);
+            Clear = true;
         }
     }
 

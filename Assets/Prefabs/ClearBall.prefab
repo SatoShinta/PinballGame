@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 4818596373394203760}
   - component: {fileID: 9017284460540095256}
   - component: {fileID: 5728573833014984759}
+  - component: {fileID: 5172060573756829769}
   m_Layer: 3
   m_Name: ClearBall
   m_TagString: Ball
@@ -340,3 +341,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5172060573756829769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7514830331331455180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd413c4357f4384419ee5e8c0f44156c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  scoreManager: {fileID: 0}
+  ballCtr: {fileID: 0}

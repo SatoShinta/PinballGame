@@ -7,11 +7,13 @@ public class SceneChange : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
     [SerializeField] ScoreManager scoreManager;
+    [SerializeField] BallCtr ballCtr;
 
     public void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         scoreManager = FindObjectOfType<ScoreManager>();
+        ballCtr = FindObjectOfType<BallCtr>();
     }
 
     public void Update()
@@ -20,6 +22,7 @@ public class SceneChange : MonoBehaviour
         {
             ChangeSceneResult();
         }
+
     }
 
 
@@ -36,5 +39,10 @@ public class SceneChange : MonoBehaviour
     public void ChangeSceneTitle()
     {
         SceneManager.LoadScene("TitleScene");
+    }
+
+    public void ChangeSceneClear()
+    {
+        SceneManager.LoadScene("ClearScene");
     }
 }
