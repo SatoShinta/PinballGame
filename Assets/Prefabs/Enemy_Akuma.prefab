@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6866271616289642943}
   - component: {fileID: 7938428816516584548}
   - component: {fileID: -636517752329899014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_Akuma
   m_TagString: Enemy
   m_Icon: {fileID: 0}

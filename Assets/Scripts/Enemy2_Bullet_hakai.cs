@@ -19,11 +19,7 @@ public class Enemy2_Bullet_hakai : MonoBehaviour
             // 弾自身を破壊する
             Destroy(gameObject);
 
-            // Flipperを復活させる
-            Invoke("RestoreFlipper", respawnTimer );
-
-            //衝突したフリッパーをリストに追加する
-            hitFlippers.Add( collision.gameObject );
+           
         }
 
     }
