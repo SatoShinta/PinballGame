@@ -6,6 +6,7 @@ public class BallCtr : MonoBehaviour
     [SerializeField] GameManager gameManager;
     [SerializeField] GameObject[] taihou;
     [SerializeField] GameObject enemy_3_spawn;
+    [SerializeField] GameObject Clear_Ball;
     [SerializeField] ScoreManager scoreManager;
     [SerializeField] EnemyManager EnemyManager;
 
@@ -75,10 +76,10 @@ public class BallCtr : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Clear"))
         {
-            //rigidbody2.velocity = Vector2.up * 2;
-            //rigidbody2.gravityScale = -10;
+            Instantiate(Clear_Ball, transform.position, Quaternion.identity);
             animator.SetBool("Clear", true);
             gameManager.timerStart = false;
+            this.gameObject.SetActive(false);
         }
     }
 

@@ -9056,6 +9056,7 @@ MonoBehaviour:
   - {fileID: 856797874}
   - {fileID: 1280384076}
   enemy_3_spawn: {fileID: 585565217}
+  Clear_Ball: {fileID: 7514830331331455180, guid: 8ab62f824caad8245a6e9bfe91826157, type: 3}
   scoreManager: {fileID: 113837963}
   EnemyManager: {fileID: 649890971}
   f_counter1: 0
