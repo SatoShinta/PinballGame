@@ -16,6 +16,7 @@ TagManager:
   - spawn3
   - Enemy3
   - Flipper
+  - Clear
   layers:
   - Default
   - TransparentFX

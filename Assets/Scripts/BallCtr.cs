@@ -11,16 +11,29 @@ public class BallCtr : MonoBehaviour
 
     Rigidbody2D rigidbody2;
     Collider2D taihoucol;
+    Animator animator;
     public int f_counter1;
+    public int destroyCounter;
 
 
     private void Start()
     {
         rigidbody2 = GetComponent<Rigidbody2D>();
         f_counter1 = 0;
+        destroyCounter = 0;
+        animator = GetComponent<Animator>();
     }
 
-   
+    public void Update()
+    {
+        if(destroyCounter >= 5)
+        {
+            gameManager.gameOverTimer += 3f;
+            destroyCounter = 0;
+        }
+    }
+
+
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -34,12 +47,15 @@ public class BallCtr : MonoBehaviour
                 break;
             case "Enemy":
                 scoreManager.ScoreUpdate(1);
+                destroyCounter++;
                 break;
             case "Enemy2":
                 scoreManager.ScoreUpdate(2);
+                destroyCounter++;
                 break;
             case "Enemy3":
                 scoreManager.ScoreUpdate(3);
+                destroyCounter++;
                 break;
             default:
                 break;
@@ -55,6 +71,14 @@ public class BallCtr : MonoBehaviour
             EnemyManager.enemy_3_spawn = true;
             EnemyManager.EnemyInstantiate3();
             f_counter1 = 1;
+        }
+
+        if (collision.gameObject.CompareTag("Clear"))
+        {
+            rigidbody2.velocity = Vector2.zero;
+            rigidbody2.gravityScale = 0;
+            animator.SetBool("Clear", true);
+            gameManager.timerStart = false;
         }
     }
 

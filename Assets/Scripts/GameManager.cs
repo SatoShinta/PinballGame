@@ -13,9 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField, Header("タイマー")] Text timer;
 
     public bool gameOver;
-    bool timerStart;
+    public bool timerStart;
     float gameTimer;
-    float gameOverTimer = 60;
+    public float gameOverTimer = 60;
 
     Rigidbody2D[] leftRig;
     Rigidbody2D[] rightRig;
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         {
             AddTorque(leftRig, torqueForce);
             AddTorque(rightRig, -torqueForce);
-            if(gameTimer >= 2f && stertText.enabled == true)
+            if (gameTimer >= 2f && stertText.enabled == true)
             {
                 Invoke("GameStart", 0.3f);
                 stertText.enabled = false;
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if(timerStart == true)
+        if (timerStart == true)
         {
             gameOverTimer -= Time.deltaTime;
         }
