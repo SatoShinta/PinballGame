@@ -76,7 +76,7 @@ public class BallCtr : MonoBehaviour
         if (collision.gameObject.CompareTag("Clear"))
         {
             rigidbody2.velocity = Vector2.zero;
-            rigidbody2.gravityScale = 0;
+            rigidbody2.gravityScale = -1;
             animator.SetBool("Clear", true);
             gameManager.timerStart = false;
         }
