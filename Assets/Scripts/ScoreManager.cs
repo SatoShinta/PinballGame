@@ -18,7 +18,7 @@ public class ScoreManager : MonoBehaviour
     public static int extraScore;
 
     // スコアを追加するしきい値の配列
-    private int[] thresholds = { 100, 200, 300 };
+    private int[] thresholds = { 80, 200, 300 };
     private int thresholdIndex = 0;
 
     // しきい値を超えたかどうかのフラグ
@@ -98,8 +98,8 @@ public class ScoreManager : MonoBehaviour
     //追加得点の処理をするメソッド
     public void ScoreUpdate(int scr)
     {
-        score += scr;
-        extraScore += score;
+        //score += scr;
+        extraScore += scr;
         bestScoreText.text = ("追加得点  " + extraScore.ToString());
     }
 
