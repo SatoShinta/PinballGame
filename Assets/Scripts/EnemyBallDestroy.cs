@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class EnemyBallDestroy : MonoBehaviour
 {
+    public float destroyTimer = 0;
 
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position.y <= -14)
+        destroyTimer += Time.deltaTime;
+        if (this.transform.position.y <= -14 || destroyTimer >= 10f)
         {
             Destroy(gameObject);
         }

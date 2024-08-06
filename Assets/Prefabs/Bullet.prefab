@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7202204135511240354}
   - component: {fileID: 6388542907516556288}
   - component: {fileID: 4279519037377330511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,3 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnTimer: 2
+  hitFlippers: []
