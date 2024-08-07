@@ -990,7 +990,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e2f5e3b544543474394a312198c50d9e, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -1296,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361665717220707618, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 95.500015
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 8361665717220707618, guid: 7369eb8b9ae7ac34b8ab067597c91010, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1935,7 +1935,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e2f5e3b544543474394a312198c50d9e, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -2378,7 +2378,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e2f5e3b544543474394a312198c50d9e, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -2637,9 +2637,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e2f5e3b544543474394a312198c50d9e, type: 3}
     m_FontSize: 35
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 42
@@ -2649,7 +2649,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\u300A\u30EB\u30FC\u30EB\u8AAC\u660E2\u300B \n\u9752\u8272\u306E\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u306F\u30DC\u30FC\u30EB\u304C\u89E6\u308C\u308B\u3068\u5439\u3063\u98DB\u3076\uFF01\n\n\n\u4E00\u756A\u4E0A\u306B\u3042\u308B\u3053\u306E\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u3092\u7834\u58CA\u3057\u3066\u3001\n\u305D\u306E\u307E\u307E\u4E0A\u306B\u98DB\u3093\u3067\u3044\u3051\u305F\u3089\u30AF\u30EA\u30A2
+  m_Text: "\u300A\u30EB\u30FC\u30EB\u8AAC\u660E2\u300B \n\u9752\u8272\u306E\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u306F\u30DC\u30FC\u30EB\u304C\u89E6\u308C\u308B\u3068\u5439\u3063\u98DB\u3076\uFF01\n\n\n\u4E00\u756A\u4E0A\u306B\u3042\u308B\u3053\u306E\u2193\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u3092\u7834\u58CA\u3057\u3066\u3001\n\u305D\u306E\u307E\u307E\u4E0A\u306B\u98DB\u3093\u3067\u3044\u3051\u305F\u3089\u30AF\u30EA\u30A2
     \uFF01\n\n"
 --- !u!222 &1747224034
 CanvasRenderer:
@@ -2685,7 +2685,7 @@ Transform:
   m_GameObject: {fileID: 1760324539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -187.02637, y: -105.500046, z: -4860}
+  m_LocalPosition: {x: -187.02637, y: -63, z: -4860}
   m_LocalScale: {x: 54, y: 54, z: 54}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2990,7 +2990,7 @@ Transform:
   m_GameObject: {fileID: 1931664435}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 189, y: -105.500046, z: -4860}
+  m_LocalPosition: {x: 189, y: -63, z: -4860}
   m_LocalScale: {x: 54, y: 54, z: 54}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3215,9 +3215,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e2f5e3b544543474394a312198c50d9e, type: 3}
     m_FontSize: 35
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 42
@@ -3262,7 +3262,7 @@ Transform:
   m_GameObject: {fileID: 2112255785}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: -105.500046, z: -4860}
+  m_LocalPosition: {x: 9, y: -63, z: -4860}
   m_LocalScale: {x: 54, y: 54, z: 54}
   m_ConstrainProportionsScale: 0
   m_Children: []
