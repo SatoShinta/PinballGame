@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver;
     public bool timerStart;
     float gameTimer;
-    public float gameOverTimer = 60;
+    public static float gameOverTimer;
 
     Rigidbody2D[] leftRig;
     Rigidbody2D[] rightRig;
@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        gameOverTimer = 60f;
         gameOver = false;
 
         LeftFlipper = GameObject.FindGameObjectsWithTag("Left");

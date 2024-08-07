@@ -15,6 +15,7 @@ public class BallCtr : MonoBehaviour
     Animator animator;
     public int f_counter1;
     public int destroyCounter;
+    public static int destroyCounter2;
     public bool Clear;
 
 
@@ -23,6 +24,7 @@ public class BallCtr : MonoBehaviour
         rigidbody2 = GetComponent<Rigidbody2D>();
         f_counter1 = 0;
         destroyCounter = 0;
+        destroyCounter2 = 0;
         animator = GetComponent<Animator>();
     }
 
@@ -30,7 +32,7 @@ public class BallCtr : MonoBehaviour
     {
         if(destroyCounter >= 5)
         {
-            gameManager.gameOverTimer += 3f;
+            GameManager.gameOverTimer += 3f;
             destroyCounter = 0;
         }
     }
@@ -50,14 +52,17 @@ public class BallCtr : MonoBehaviour
             case "Enemy":
                 scoreManager.ScoreUpdate(1);
                 destroyCounter++;
+                destroyCounter2++;
                 break;
             case "Enemy2":
                 scoreManager.ScoreUpdate(2);
                 destroyCounter++;
+                destroyCounter2++;
                 break;
             case "Enemy3":
                 scoreManager.ScoreUpdate(3);
                 destroyCounter++;
+                destroyCounter2++;
                 break;
             default:
                 break;
