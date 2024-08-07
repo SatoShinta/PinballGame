@@ -983,6 +983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   scoreManager: {fileID: 0}
+  ballCtr: {fileID: 0}
 --- !u!1 &140902930
 GameObject:
   m_ObjectHideFlags: 0
@@ -8642,7 +8643,6 @@ MonoBehaviour:
   timer: {fileID: 943329337}
   gameOver: 0
   timerStart: 0
-  gameOverTimer: 200
 --- !u!4 &1404557257
 Transform:
   m_ObjectHideFlags: 0
@@ -9061,6 +9061,7 @@ MonoBehaviour:
   EnemyManager: {fileID: 649890971}
   f_counter1: 0
   destroyCounter: 0
+  Clear: 0
 --- !u!95 &1498828679
 Animator:
   serializedVersion: 5
@@ -9724,11 +9725,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0a67b18ff333cc043b9bd22c8fdb0343, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e14c4ea489bdbd64bbf4dd886d9b14a2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
